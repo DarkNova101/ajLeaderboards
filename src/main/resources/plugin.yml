@@ -16,3 +16,5 @@ permissions:
    ajleaderboards.use:
       description: Allows you to set up the plugin
       default: op
+libraries:
+   - com.squareup.okhttp3:okhttp:4.11.0

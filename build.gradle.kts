@@ -43,7 +43,7 @@ dependencies {
     implementation("us.ajg0702.commands.platforms.bukkit:bukkit:1.0.0")
     implementation("us.ajg0702.commands.api:api:1.0.0")
 
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    compileOnly("com.squareup.okhttp3:okhttp:4.11.0")
 
     compileOnly("net.luckperms:api:5.4")
 
@@ -90,11 +90,11 @@ tasks.shadowJar {
     relocate("io.leangen", "us.ajg0702.leaderboards.libs")
     relocate("io.papermc.lib", "us.ajg0702.leaderboards.libs.paperlib")
     relocate("com.squareup", "us.ajg0702.leaderboards.libs")
-    relocate("okhttp3", "us.ajg0702.leaderboards.libs.okhttp3")
-    relocate("okio", "us.ajg0702.leaderboards.libs.okio")
+//    relocate("okhttp3", "us.ajg0702.leaderboards.libs.okhttp3")
+//    relocate("okio", "us.ajg0702.leaderboards.libs.okio")
     relocate("org.intellij", "us.ajg0702.leaderboards.libs.intellij")
     relocate("org.jetbrains", "us.ajg0702.leaderboards.libs.jetbrains")
-    relocate("kotlin", "us.ajg0702.leaderboards.kotlin")
+//    relocate("kotlin", "us.ajg0702.leaderboards.kotlin")
 
     archiveBaseName.set("ajLeaderboards")
     archiveClassifier.set("")
